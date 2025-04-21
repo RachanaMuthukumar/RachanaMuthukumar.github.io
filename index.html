@@ -139,20 +139,20 @@ h5{
                         margin-left: 20px;
                     }
                         svg {
-                            width: 20mm; /* Reduce size to better fit small screens */
+                            width: 20mm;
                             height: 20mm;
                         }
 
                         .icon-text {
                             display: flex;
-                            align-items: flex-start; /* Align text to the top */
-                            gap: 2mm; /* Reduce spacing to accommodate smaller screens */
+                            align-items: flex-start; 
+                            gap: 2mm; 
                         }
 
                         .project {
-                            font-size: 10px; /* Reduce font size for better fit */
-                            padding: 4px; /* Adjust padding for consistency */
-                            flex-direction: column; /* Stack items vertically if space is tight */
+                            font-size: 10px;
+                            padding: 4px;
+                            flex-direction: column; 
                         }
 
                         h5 {
@@ -160,6 +160,108 @@ h5{
                         overflow: visible; /* Ensure the text is not clipped */
                         text-overflow: unset; /* Disable truncation */
                     }
+                    }
+                    @media (max-width: 720px){
+                        #skills{
+                        margin-left: 10px!important;
+                    }
+                    svg{
+                    width: 50mm !important;
+                    height: 50mm !important;
+                   }
+                   .video {
+            width: 100% !important;
+            max-width: 300px !important;
+            margin: 10px auto !important;
+            display: block !important;
+            left:50% !important;
+            top:89% !important;
+            position: absolute !important;
+            transform: translate(-50%,-50%) !important;
+        }
+        .aa {
+            margin: 10px !important;
+            text-align: justify !important;
+            font-size: 16px !important;
+            margin-top: 180px !important;
+        }
+        .brush-text {
+            font-size: 30px !important;
+            font-weight: bold !important;
+            background: linear-gradient(to right, black, rgb(83, 83, 83)) !important;
+            -webkit-background-clip: text !important;
+            color: transparent !important;
+            text-align: center !important;
+            margin: 20px 0 !important;
+        }
+        h2, h5 {
+            font-size: 1.2rem !important;
+            margin: 15px !important;
+            text-align: center !important;
+        }
+        a{
+            text-decoration: none !important;
+        }
+        button {
+          
+            height: 3rem !important;
+            width: 7rem !important;
+            border-radius: 2em !important;
+            background-color: rgb(208, 208, 255) !important;
+            color: rgb(47, 0, 128) !important;
+            border-color: rgb(113, 113, 242) !important;
+            font-size: 16px !important;
+            margin: 10px auto !important;
+            display: block !important; 
+            text-decoration: none !important;
+        }
+        .button-container {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            gap: 10px !important;
+            text-decoration: none !important;
+        }
+        .button {
+            text-decoration: none !important;
+            background-color: #4797e7 !important;
+            color: white !important;
+            padding: 10px 20px !important;
+            border-radius: 1.5rem !important;
+            font-size: 1rem !important;
+        }
+        .button:hover {
+            background-color: #005bb5 !important; 
+        }
+        #projects {
+        padding: 15px 10px !important;
+    }
+
+    #projects h2 {
+        font-size: 18px !important;
+    }
+
+    .project {
+        padding: 8px;
+        text-align: left !important;
+    }
+
+    .icon-text h5 {
+        font-size: 17px !important;
+        margin :0 !important;
+    }
+
+    .icon-text {
+        gap: 5px !important;
+        align-items: center !important;
+    }
+
+    .icon-text svg {
+        width: 32px !important;
+        height: 32px !important;
+        flex-shrink: 0 !important;
+    }
+
                     }
             @media (max-width: 576px) {
                     
