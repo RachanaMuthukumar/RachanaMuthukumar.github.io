@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <title>Resume</title>
+    <style>
+      .background-video{
+        border:none;
+        width: 80%; 
+        height: auto;
+        max-width: 80%; 
+      }
+      .fs-2 text-body-emphasis{
+        font-size: 25px ;
+      }
+      
+      button{
+       height: 4rem;
+        border-radius: 2em;
+        background-color: lavender;
+        color:purple;
+       width: 8rem;
+        border-color: lavender;
+        font-size: 20px;
+        
+      }
+      .but{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer {
+          color: #fff;
+          text-align: center;
+          padding: 10px 0px;
+          background-color: rgba(0, 0, 0, 0.7);
+          width: 100%;
+          font-family: 'Comic Sans MS', cursive;
+          margin-top: auto;
+          position: relative;
+          }
+            .footer-content ul.socials li {
+                display: inline;
+                margin: 0 10px;
+            }
+            .footer-content ul.socials li a {
+                color: #fff;
+                text-decoration: none;
+            }
+            .footer-content ul.socials li a:hover {
+                color: #4CAF50; 
+            }
+           .container px-5{
+            border:none;
+           }
+           .nav-item a:hover {
+              background-color:white;
+          }
+          .navb-item .toggle {
+              display: none;
+              font-size: 1.5em;
+              color: black;
+              cursor: pointer;
+          }
+          .nav-pills .nav-link {
+            font-size: 1.5rem; 
+            padding: 10px 15px; 
+            color:black !important;
+            text-decoration: none;
+  }
+  .sidebar {
+              height: 40%;
+              width: 0;
+              position: fixed;
+              top: 0;
+              left: 0;
+              background-color: transparent;
+              overflow-x: hidden;
+              transition: 0.3s;
+              padding-top: 60px;
+          }
+          .sidebar a {
+              padding: 10px 15px;
+              text-decoration: none;
+              font-size: 20px;
+              color: black;
+              display: block;
+              transition: 0.3s;
+          }
+          .sidebar a:hover {
+              background-color: white;
+          }
+          .closebtn {
+              position: absolute;
+              top: 10px;
+              right: 15px;
+              font-size: 30px;
+              cursor: pointer;
+          }
+          h1{
+            justify-content: center;
+            text-align: center;
+          }
+          a {
+            text-decoration: none;
+          }
+          .openbtn {
+              font-size: 25px;
+              cursor: pointer;
+              background-color: #111;
+              color: white;
+              border: none;
+              padding: 10px 15px;
+              position: absolute;
+              right: 10px;
+          }
+          .text-center.border-bottom {
+              border-bottom: none;
+            }
+          @media (min-width: 768px) {
+                    .sidebar, .openbtn {
+                        display: none;
+                    }
+                }
+                @media (max-width: 768px) {
+                    .nav-item{
+                      display:none;
+                    }
+                }
+  
+    </style>
+</head>
+<body>
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+  </ul>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#skills" class="nav-link">Skills</a>
+</div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button></div>
+</div>
+<script>
+  function openNav() {
+      document.getElementById("mySidebar").style.width = "300px";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+  }
+</script>
+
+  <h1 class="display-4 fw-bold text-body-emphasis">Hi, This is Rachana Muthukumar</h1>
+  
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4"><i>A Motivated engineering student with strong problem-solving, analytical, and communication skills. 
+      Proficient in task prioritization, time management, and collaboration. Eager to apply technical 
+      knowledge in real-world settings and continuously grow as a professional.</i></p>
+  </div>
+</div>
+        <div class="but">
+          <a href="Rachana.pdf" target="_blank">
+          <button>Resume</button>
+          </a>
+        </div>
+        <section id="projects">
+        <div class="container px-4 py-5" id="featured-3">
+          <h2 class="pb-2 border-bottom">Projects</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+            <div class="feature col" style="text-align: left;"> <!-- Add a text-align style -->
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="20" stroke="violet" stroke-width="4" fill="beige" />
+              </svg>
+              <h3 class="fs-2 text-body-emphasis">Stress Detection System using Deep learning and Image processing </h3>
+              <p>Developed a web-based system using VGG16 and FACS to detect stress levels based on facial images in real-time and uploaded images.</p>
+            </div>
+            
+            <div class="feature col" style="text-align: left;"> <!-- Add a text-align style -->
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="20" stroke="violet" stroke-width="4" fill="beige" />
+              </svg>
+              <h3 class="fs-2 text-body-emphasis">Water Quality Detection System</h3><br>
+              <p>It is based on ML, used to find the quality of water in a given area based on the datasets.</p>
+            </div>
+            
+            <div class="feature col" style="text-align: left;"> <!-- Add a text-align style -->
+              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="20" stroke="violet" stroke-width="4" fill="beige" />
+              </svg>
+              <h3 class="fs-2 text-body-emphasis">Blog Website Deployed on AWS</h3><br>
+              <p>Built using HTML, CSS, and JavaScript, a website on the greenery of my college BMSIT.</p>
+            </div>
+           
+            </div>
+          </div>
+        </section>
+        <section id="contact ">
+          <div class="container px-4 py-0 my-0 pt-0" id="icon-grid">
+            <h2 class="pb-2 border-bottom">Contact</h2>
+          
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+              
+              <div class="col d-flex align-items-start mb-2">
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://www.linkedin.com/in/rachana-muthukumar-345233262" target="_blank">LinekdIn</a></h3>
+                </div>
+              </div>
+              
+              <div class="col d-flex align-items-start">
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Hospitality Team Lead</h3>
+                  <p> Coding Club Hackathon: Managed logistics and hospitality for guest speakers and evaluators, ensuring smooth event execution for 200+ participants. </p>
+                </div>
+              </div>
+              
+              <div class="col d-flex align-items-start">
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Eco Club Coordinator</h3>
+                  <p> Coordinated many events for the Eco Club, such as Environment Day, E waste Drive, and Nat Quiz, NatNexus. </p>
+                </div>
+              </div>
+              
+              <div class="col d-flex align-items-start">
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Internships</h3>
+                  <p> IEEE CS Internship, SkillCraft Technology (Web Development Internship). </p>
+                </div>
+              </div>
+              
+              <div class="col d-flex align-items-start">
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Publications</h3>
+                  <p> Water quality prediction (IEEE) and Stress detection using Deep learning and Image processing techniques (River Publications). </p>
+                </div>
+              </div>
+              
+              <div class="col d-flex align-items-start">
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Programming Languages</h3>
+                  <p> C, Java, Python, JavaScript, HTML, CSS, Full-Stack Development, React, Django. </p>
+                </div>
+              </div>
+              
+              <div class="col d-flex align-items-start">
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Language</h3>
+                  <p> English, Telugu, Hindi, Kannada, Tamil. </p>
+                </div>
+              </div>
+              
+              <div class="col d-flex align-items-start">
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Interests</h3>
+                  <p> Dancing - Bharatnatyam, Listening to Music, Sports (TT, Badminton), Drawing, Painting. </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+        <div>
+          <footer>
+              <div class="footer-content">
+                  <h3>&copy; 2024 PersonalResume. All rights reserved.</h3>
+                  <ul class="socials">
+                      <li><a href="https://www.linkedin.com/in/rachana-muthukumar-345233262" target="_blank">LinekdIn</a></li>
+                      <li><a href="mailto:rachanamuthukumar08@gmail.com" target="_blank">Mail</a></li>
+                      <li><a href="https://github.com/RachanaMuthukumar" target="_blank">GitHub</a></li>
+                  </ul>
+              </div>
+            </footer>
+      </div>
+    </section>
+    
+</body>
+</html>
